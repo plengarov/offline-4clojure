@@ -6,7 +6,7 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  #(nth %1 %2)
 )
 
 (defn -main []
