@@ -6,7 +6,9 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [coll]
+    (reduce (fn [m _]
+              (inc m)) 0 coll))
 )
 
 (defn -main []
