@@ -1,12 +1,13 @@
 ;; Compress a Sequence - Easy
 ;; Write a function which removes consecutive duplicates from a sequence.
 ;; tags - seqs
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p30
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [s]
+    (seq (dedupe s)))
 )
 
 (defn -main []

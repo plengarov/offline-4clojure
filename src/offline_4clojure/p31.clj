@@ -1,12 +1,13 @@
 ;; Pack a Sequence - Easy
 ;; Write a function which packs consecutive duplicates into sub-lists.
 ;; tags - seqs
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p31
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [s]
+    (partition-by identity s))
 )
 
 (defn -main []

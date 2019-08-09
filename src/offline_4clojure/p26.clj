@@ -1,12 +1,15 @@
 ;; Fibonacci Sequence - Easy
 ;; Write a function which returns the first X fibonacci numbers.
 ;; tags - Fibonacci:seqs
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p26
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [n]
+    (take n
+          ((fn fib-rec [a b]
+             (cons a (lazy-seq (fib-rec b (+ a b))))) 1 1)))
 )
 
 (defn -main []

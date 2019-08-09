@@ -6,7 +6,10 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn flt [s]
+    (if (sequential? s)
+      (mapcat flt s)
+      (list s)))
 )
 
 (defn -main []
