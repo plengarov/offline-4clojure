@@ -6,7 +6,10 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [& args]
+    (reduce (fn [a b]
+              (if (> a b) a
+                  b)) args))
 )
 
 (defn -main []

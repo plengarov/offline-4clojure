@@ -6,7 +6,10 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn intl [s1 s2]
+    (when (and (seq s1) (seq s2))
+      (lazy-cat [(first s1) (first s2)]
+                (intl (rest s1) (rest s2)))))
 )
 
 (defn -main []

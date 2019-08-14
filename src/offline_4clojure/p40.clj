@@ -6,7 +6,8 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn intp [delimiter coll]
+    (drop 1 (interleave (repeat delimiter) coll)))
 )
 
 (defn -main []

@@ -7,7 +7,7 @@
 
 (def __
   (fn [s]
-    ())
+    (mapcat #(repeat 2 %) s))
 )
 
 (defn -main []

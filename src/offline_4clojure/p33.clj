@@ -1,12 +1,13 @@
 ;; Replicate a Sequence - Easy
 ;; Write a function which replicates each element of a sequence a variable number of times.
 ;; tags - seqs
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p33
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn [s n]
+    (mapcat #(repeat n %) s))
 )
 
 (defn -main []
