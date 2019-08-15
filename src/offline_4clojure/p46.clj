@@ -1,12 +1,16 @@
 ;; Flipping out - Medium
 ;; Write a higher-order function which flips the order of the arguments of an input function.
 ;; tags - higher-order-functions
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p46
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn
+    [f]
+    (fn
+      [a b]
+      (f b a)))
 )
 
 (defn -main []

@@ -1,12 +1,14 @@
 ;; Reverse Interleave - Medium
 ;; Write a function which reverses the interleave process into x number of subsequences.
 ;; tags - seqs
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p43
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn reverse-interleave
+    [coll n]
+    (apply map list (partition-all n coll)))
 )
 
 (defn -main []

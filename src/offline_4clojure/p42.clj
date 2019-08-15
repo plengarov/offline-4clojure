@@ -6,13 +6,18 @@
   (:use clojure.test))
 
 (def __
-
+  (fn factorial
+    [n]
+    (cond
+      (zero? n) 0
+      (= n 1) 1
+      :else (* n (factorial (dec n)))))
 )
 
 (defn -main []
   (are [soln] soln
-(= (__ 1) 1)
-(= (__ 3) 6)
-(= (__ 5) 120)
-(= (__ 8) 40320)
+    (= (__ 1) 1)
+    (= (__ 3) 6)
+    (= (__ 5) 120)
+    (= (__ 8) 40320)
 ))
