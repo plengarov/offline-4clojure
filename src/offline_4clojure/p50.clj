@@ -1,12 +1,14 @@
 ;; Split by Type - Medium
 ;; Write a function which takes a sequence consisting of items with different types and splits them up into a set of homogeneous sub-sequences. The internal order of each sub-sequence should be maintained, but the sub-sequences themselves can be returned in any order (this is why 'set' is used in the test cases).
 ;; tags - seqs
-;; restricted - 
+;; restricted -
 (ns offline-4clojure.p50
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn
+    [coll]
+    ())
 )
 
 (defn -main []

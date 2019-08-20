@@ -6,7 +6,9 @@
   (:use clojure.test))
 
 (def __
-;; your solution here
+  (fn
+    [n coll]
+    (vector (take n coll) (drop n coll)))
 )
 
 (defn -main []
